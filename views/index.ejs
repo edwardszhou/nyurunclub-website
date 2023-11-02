@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>NYU Run Club</title>
+        <script type="text/javascript" src="../events.js"></script>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div class="banner" id="home-banner">
+            <img src="logo.svg">
+            <div class="banner-menu">
+                <p>
+                    <a href="#home-info">Club Info</a>
+                </p>
+                <p>
+                    <a href="#photos-info">Photos</a>
+                </p>
+                <p>
+                    <a href="#contact-info">Contact Us</a>
+                </p>
+            </div>
+        </div>
+        <div class="section" id="home-info">
+            <div class="sub-section">
+                <h1 id="info-title">Club Info</h1>
+                <div id="info-content">
+                    <p><span class="purple-bold-text">NYU Run Club</span> is an inclusive and supportive community of runners at NYU, 
+                        fostering both recreational and competitive spirits for running. </p>
+                    <p>Our community ranges from experienced athletes to first-time runners, 5K runners to marathoners, 
+                        first-years to graduate students—there's a place for everyone!</p>
+
+                        We meet 5 times a week for practice:
+                    <ul class="schedule">
+                        <li><span class="purple-bold-text">MONDAY:</span> Strength Training, <span class="black-bold-text">7pm</span> @ 404 Lafayette</li>
+                        <li><span class="purple-bold-text">TUESDAY:</span> Group Run, <span class="black-bold-text">6pm</span> @ Hudson River Fountain</li>
+                        <li><span class="purple-bold-text">FRIDAY:</span> Strength Training, <span class="black-bold-text">7pm</span> @ 404 Lafayette</li>
+                        <li><span class="purple-bold-text">SATURDAY:</span> Group Run, <span class="black-bold-text">10am</span> @ Hudson River Fountain</li>
+                        <li><span class="purple-bold-text">SUNDAY:</span> Group Run, <span class="black-bold-text">10am</span> @ Hudson River Fountain</li>
+                    </ul>
+                    <p>
+                        <i>Practices are not mandatory;</i> feel free to come whenever free!
+                        In addition to practices, we also attend races around NYC and host fun events such as hiking, skating, and more!
+                    </p>
+                </div>
+            </div>
+            <div class="sub-section" id="info-map">
+                <iframe src="https://www.google.com/maps/d/embed?mid=1iLKs4Y70RIHiZTx8Tt8hJMicO8ZUpLA&ehbc=2E312F"></iframe>
+                <!-- <script src="sketches/particle.js"></script>
+                <script src="sketches/sketch.js"></script> -->
+            </div>
+
+        </div>
+        <div id="photos-info">
+            <h1><span>Photo Gallery</span><a href="/photos">See More ></a></h1>
+            <div id="section-gallery">
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/races/27.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/practices/2.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/practices/15.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/races/8.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/races/9.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/practices/4.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/events/2.jpg"></a>
+                <a href="/photos"><img class="home-gallery" loading="lazy" src="photos/events/5.jpg"></a>
+            </div>
+        </div>
+
+        <div class="section" id="contact-info">
+            <div class="sub-section" style="width:40vw">
+                <h1 class="purple-bold-text" id="contact-title">Contact Us</h1>
+                <div id="contact-content">
+                    <p>
+                        If you're interested in joining the club, please join the Discord below—it contains
+                        all the information about registration, runs, races, events, and more. Feel free to reach
+                        out to our coach Terry White Jr. (ttw2018@nyu.edu) or our president Bridget Xu (bx2078@nyu.edu) 
+                        for more questions.
+                    </p>
+                    <h2>Important Links:</h2>
+                        <button onclick="window.open('https://gonyuathletics.com/sports/2008/8/11/GEN_0811082303.aspx','_blank')">NYU Athletics Page</button>
+                        <button onclick="window.open('https://discord.gg/KeEFmzVHmz','_blank')">Discord Server</button>
+                        <button onclick="window.open('https://www.instagram.com/nyurunclub/','_blank')">Instagram</button>
+                        <button onclick="window.open('https://www.strava.com/clubs/1064512','_blank')">Strava Club</button>
+                </div>
+            </div>
+            <div class="sub-section" style="width:60vw">
+                <div class="app-container">
+                    <h2>Upcoming Schedule</h2>
+                    <!-- <div class="input-container">
+                        <form method="POST" action="/upload">
+                            <input type="text" name="name" placeholder="Name" />
+                            <br>
+                            <input type="text" name="text" placeholder="Leave a message!" />
+                            <br>
+                            <input type="submit" name="submitbutton" value="Submit" />
+                        </form>
+                    </div> -->
+                    <div class="messages-container" id="calendar-container">
+                        <!-- <% messages.forEach( (message) => { %>
+                            <div class="message-item">
+                                <div class="message-name"><%= message.name %></div>
+                                <div class="message-date"><%= message.date %></div>
+                                <p class="message"><%= message.text %></p>
+                                
+                            </div>
+                        <% }) %> -->
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>

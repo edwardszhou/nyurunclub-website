@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Photo Gallery</title>
+        <script type="text/javascript" src="../script.js"></script>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <% if(typeof popup != 'undefined' && popup != null) { %>
+            <span id="popup" data-value="<%=popup%>"></span>
+        <% } %>
+        <div class="banner" id="photos-banner">
+            <div id="menu-bar">
+                <h1 class="page-title">Photo Gallery</h1>
+            </div>
+
+            <div id="photos-menu">
+                <a class="photos-menu-nav" href="#practices">Practices</a>
+                <a class="photos-menu-nav" href="#races">Races</a>
+                <a class="photos-menu-nav" href="#events">Events</a>
+                <a class="photos-menu-nav" id="add-photos-button" href="/add-photos">+</a>
+            </div>
+            <div class="return-home">
+                <a href="/"> < Back to Home</a>
+            </div>
+        </div>
+        <div class="modal" id="modal-section">
+            <span id="close-modal">&times;</span>
+            <form method="POST" action="/remove">
+                <label for="remove-submit-btn" id="remove-label">Remove Photo</label>
+                <input id="remove-submit-btn" type="submit" name="remove-btn" value="" class="remove-submit-btn" onclick="return (prompt('Enter Admin Code:') == 'runclubadmin')">
+                <input id="remove-hidden" type="hidden" name="messageId" value="">
+            </form>
+            <img class="modal-content" id="modal-img">
+        </div>
+        <div class="photos-section" id="practices">
+            <h1>Practices</h1>
+            <% messages.forEach( (photo) => { %>
+                <%if(photo.imgType == "practices") { %>
+                    <img class="gallery-photos lazy" data-src='<%= photo.imgSrc %>' id="<%= photo._id %>">
+                <% } %>
+            <% }) %>
+        </div>
+        <div class="photos-section-alt" id="races">
+            <h1>Races</h1>
+            <% messages.forEach( (photo) => { %>
+                <%if(photo.imgType == "races") { %>
+                    <img class="gallery-photos lazy" data-src='<%= photo.imgSrc %>' id="<%= photo._id %>">
+                <% } %>
+            <% }) %>
+        </div>
+        <div class="photos-section" id="events">
+            <h1>Events</h1>
+            <% messages.forEach( (photo) => { %>
+                <%if(photo.imgType == "events") { %>
+                    <img class="gallery-photos lazy" data-src='<%= photo.imgSrc %>' id="<%= photo._id %>">
+                <% } %>
+            <% }) %>
+        </div>
+        <div id="photos-end-banner">
+            <a href="#photos-banner">Back to Top</a>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,572 @@
+@font-face {
+    font-family: gotham-bold;
+    src: url(Gotham-Bold.otf);
+}
+@font-face {
+    font-family: gotham-light;
+    src: url(Gotham-Light.otf);
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    font-family: gotham-light;
+    margin:0;
+    font-size: 1.5vw;
+
+}
+h1 {
+    font-family: gotham-bold;
+    font-size: 5vw;
+    color: white;
+}
+h2 {
+    font-family: gotham-bold;
+    font-size: 2vw;
+    color: black;
+}
+.section {
+    height: 100vh;
+    max-height: 100vmin;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.section .sub-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.purple-bold-text {
+    color: rgba(88, 8, 139, 1);
+    font-family: gotham-bold;
+}
+
+.black-bold-text {
+    color: black;
+    font-family: gotham-bold;
+}
+/* TOP SECTION OF HOME PAGE */
+.banner {
+    height: 100vh;
+    overflow: hidden;
+    display:flex;
+    align-items: center;
+
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+}
+
+#home-banner {
+    background-image: url('photos/backgrounds/cupids.JPG');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#home-banner img {
+    height: 75%;
+    max-width: 50%;
+    padding: 0 10vw;
+    
+}
+.banner-menu {
+    font-size: 4vmin;
+    
+    color: white;
+    background-color: rgba(28, 0, 45, 0.5);
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 4vw;
+    height: 100%;
+    width: 30%;
+}
+.banner-menu p {
+    padding: 1vmin;
+    letter-spacing: 0.15em;
+    transition-duration: 0.25s;
+}
+.banner-menu p:hover {
+    letter-spacing: 0.2em;
+}
+/* INFO SECTION OF HOME PAGE */
+
+#home-info .sub-section {
+    width: 50vw;
+    
+}
+#info-title {
+    padding: 3vh 5vw;
+    margin: 8vh 0 4vh 0;
+    background-color:rgba(88, 8, 139, 1);
+    width: 66%;
+}
+iframe {
+    margin: auto;
+    width: 80%;
+    height: 80%;
+}
+#info-map {
+    width: 50vw;
+    height: 100vh;
+    max-height: 100vmin;
+}
+
+#home-info {
+    height: fit-content;
+    align-items: flex-start;
+}
+
+#info-section p {
+    margin: 5% 0;
+}
+.sub-section ul {
+    margin: 10px 0;
+}
+
+#info-content {
+    padding: 0 0 0 5vw;
+}
+
+.schedule {
+    list-style: circle;
+}
+
+/* PHOTOS SECTION OF HOME PAGE */
+
+#photos-info {
+
+    background-color:rgba(88, 8, 139, 1);
+    background-image: url('photos/backgrounds/scenery 1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#photos-info h1{
+    margin: 3vw 5vw 0 3vw;
+    padding-top: 3vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+#photos-info h1 a {
+    font-family: gotham-light;
+    text-align: right;
+    font-size: 40%;
+    letter-spacing: 0.1em;
+    transition-duration: 0.25s;
+}
+#photos-info h1 a:hover {
+    letter-spacing: 0.15em;
+}
+
+#section-gallery {
+    column-count: 4;
+    column-gap: 3vw;
+    padding: 1.5vw 3vw;
+}
+
+.home-gallery {
+    width: 100%;
+    height: auto;
+    margin: 1.5vw 0;
+    position: relative;
+    transition-duration: 0.25s;
+    filter: grayscale() brightness(120%) ;
+    
+    border:rgba(28, 0, 45, 0.5) solid 7px;
+    
+    /* filter: sepia() hue-rotate(230deg) brightness(0.8) contrast(120%)  saturate(130%); */
+
+}
+.home-gallery:hover {
+    border:rgba(197, 167, 215, 0.5) solid 7px;
+    transform: scale(1.03);
+    filter: none;
+}  
+
+/* CONTACT SECTION OF HOME PAGE */
+
+#contact-title {
+    padding-left: 3vw;
+}
+#contact-content {
+    padding-left: 5vw;
+
+}
+#contact-content p {
+    margin-top: 0;
+}
+#contact-content button {
+    border: none;
+    background-color: rgba(88, 8, 139, 1);
+    font-family: gotham-bold;
+    color: white;
+    border:rgba(88, 8, 139, 1) solid 5px;
+    cursor: pointer;
+    font-size:1.2em;
+    padding: 2vh;
+    width: 75%;
+    margin-bottom: 3vh;
+    transition:0.25s;
+}
+#contact-content button:hover {
+    border: none;
+    background-color: white;
+    font-family: gotham-bold;
+    color: rgba(88, 8, 139, 1);
+    border:rgba(88, 8, 139, 1) solid 5px;
+    cursor: pointer;
+    font-size:1.2em;
+    padding: 2vh;
+    width: 75%;
+    margin-bottom: 3vh;
+}
+
+.app-container {
+    margin: 5%;
+    margin-left: 20%;
+}
+.app-container h2 {
+    background-color: rgba(88, 8, 139, 1);
+    color: white;
+    width: 80%;
+    /* font-size: 2.5vw; */
+    padding: 1%;
+    padding-left: 2%;
+}
+.message {
+    font-size: 0.7em;
+    margin-bottom: 5%;
+    margin-top: 1%;
+    width: 100%;
+    overflow-wrap: break-word;
+}
+.message-date {
+    font-family: gotham-bold;
+    color: rgba(88, 8, 139, 1);
+    margin: 1% 0;
+    font-size: 0.6em;
+}
+.message-name {
+    font-family: gotham-bold;
+    color: black;
+    font-size: 1em;
+}
+.messages-container {
+    height: 70vh;
+    max-height: 100vmin;
+    width: 90%;
+    margin-top:7vh;
+    margin-bottom: 10vh;
+    overflow-y:auto;
+    padding-left: 1.5vw;
+    border-left:black 3px solid;
+}
+
+input {
+    margin: 1% 0;
+}
+input[type="text"] {
+    width: 82%;
+    height: 30px;
+    font-size: 60%;
+    font-family: gotham-light;
+}
+input[type="text"][name="name"] {
+    width: 25%;
+}
+::placeholder {
+    font-family: gotham-light;
+    font-size: 100%;
+    
+}
+input[type="submit"] {
+    border: none;
+    color: black;
+    font-size: 0.8em;
+    font-family: gotham-light;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    transition-duration: 0.25s;
+}
+input[type="submit"]:hover {
+    background-color: rgb(178, 178, 178);
+}
+/* TOP SECTION OF PHOTOS PAGE */
+
+#photos-banner {
+    background-image: url('photos/backgrounds/scenery 2-2.jpg');
+    background-size: cover;
+    background-position: 50% bottom;
+    background-attachment: fixed;
+
+    flex-direction: column;
+}
+
+#menu-bar {
+    background-color: rgba(28, 0, 45, 0.5);
+    width: 100%;
+    height: 50vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+}
+#photos-menu {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.photos-menu-nav {
+    margin: 12vh 2vw;
+    padding: 1vw;
+    font-size: 1em;
+    color: white;
+    letter-spacing: 0.1em;
+    border-radius: 1em;
+    border: white solid 2px;
+    transition-duration: 0.25s;
+}
+.photos-menu-nav:hover {
+    color: rgba(88, 8, 139, 1);
+    background-color: white;
+}
+#add-photos-button {
+    padding: 1vw 1.3vw;
+}
+.return-home {
+    color: white;
+    /* margin: 2em; */
+    transition-duration: 0.25s;
+}
+.return-home:hover {
+    letter-spacing: 0.05em;
+}
+.page-title{
+    font-size: 8vw;
+    margin: 0;
+    z-index: 1;
+}
+
+/* PHOTOS PAGE CONTENT */
+.photos-section {
+    column-count: 4;
+    column-gap: 1vw;
+    padding: 1vw;
+    background-color: white;
+    background-image: url('photos/backgrounds/scenery 2-3.png');
+    background-size: cover;
+    background-position: 50% bottom;
+    background-attachment: fixed;
+}
+
+.photos-section-alt {
+    background-color: rgba(88, 8, 139, 1);
+    background-image: url('photos/backgrounds/scenery 2-2.jpg');
+    background-size: cover;
+    background-position: 50% bottom;
+    background-attachment: fixed;
+    column-count: 4;
+    column-gap: 1vw;
+    padding: 1vw;
+}
+.photos-section h1 {
+    color: white;
+    background-color: rgba(88, 8, 139, 1);
+    width: 90%;
+    font-size: 4vw;
+    margin-left: -1vw;
+    padding: 0.1vw;
+    padding-left: 2vw;
+}
+.photos-section-alt h1 {
+    background-color: white;
+    color: rgba(88, 8, 139, 1);
+    width: 90%;
+    font-size: 4vw;
+    margin-left: -1vw;
+    padding: 1vw;
+    padding-left: 2vw;
+}
+
+#photos-end-banner {
+    height: 10vh;
+    background-image: url('photos/backgrounds/scenery 2-2.jpg');
+    background-size: cover;
+    background-position: 50% bottom;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+#photos-end-banner a {
+    color: white;
+    letter-spacing: 0.05em;
+    transition-duration: 0.25s;
+}
+
+#photos-end-banner a:hover{
+    letter-spacing: 0.1em;
+}
+/* modal images https://www.w3schools.com/howto/howto_css_modal_images.asp */
+.gallery-photos {
+    width: 100%;
+    height: auto;
+    margin: 0.5vw 0;
+    position: relative;
+    cursor: pointer;
+    transition: 0.25s;
+
+}
+.gallery-photos:hover {
+    transform:scale(1.01);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.7);
+}
+.modal-content {
+    margin: auto;
+    padding: 3vh 0 0 0;
+    display: block;
+    width: auto;
+    max-height: 90vh;
+    animation-name: zoom;
+    animation-duration: 0.25s;
+}
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    } to {
+        transform: scale(1);
+    }
+}
+.modal-closing {
+    animation-name: reverse-zoom;
+    animation-duration: 0.25s;
+
+}
+@keyframes reverse-zoom {
+    from {
+        transform: scale(1);
+    } to {
+        transform: scale(0);
+    }
+}
+.modal form {
+    margin: 0;
+}
+#close-modal {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    color: white;
+    font-size: 40px;
+    cursor:pointer;
+    transition-duration: 0.2s;
+}
+#close-modal:hover {
+    color: rgb(181, 134, 208);
+}
+
+#remove-submit-btn {
+    display: none;
+}
+
+#remove-label {
+    position: absolute;
+    bottom: 3%;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    cursor:pointer;
+    transition-duration: 0.2s;
+}
+#remove-label:hover {
+    color: rgb(181, 134, 208);
+}
+
+#add-photos-banner {
+    height: 100vh;
+    background-image: url('photos/backgrounds/scenery 3.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-left: 5%;
+}
+#add-photos-banner h1 {
+    padding: 5% 0 0 0;
+    margin: 0;
+    margin-bottom: 2%;
+}
+#add-photos-banner a {
+    color: white;
+    letter-spacing: 0.05em;
+
+}
+#add-photos-banner a:hover {
+    letter-spacing: 0.08em;
+}
+#add-photos-banner h2 {
+    color:black;
+    width:fit-content;
+    padding: 1%;
+    margin: 5% 0;
+    background-color: white;
+}
+input[type="file"] {
+    border: none;
+    color: black;
+    font-size: 0.8em;
+    font-family: gotham-light;
+    background-color: white;;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 1vw 0 0;
+}
+#add-photos-banner input[type="submit"] {
+    font-size: 1em;
+    padding: 10px 20px;
+    margin-top: 2%;
+
+    transition-duration: 0s;
+    font-family: gotham-bold;
+    color: rgba(88, 8, 139, 1)
+}
+select {
+    border: none;
+    color: black;
+    font-size: 0.8em;
+    font-family: gotham-light;
+    background-color: white;;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0;
+    padding: 7.5px 10px;
+}
+

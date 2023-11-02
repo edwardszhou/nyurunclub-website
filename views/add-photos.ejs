@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <title>Add Photos</title>
+        <link rel="stylesheet" href="/style.css">
+    </head>
+    <body>
+        <div id="add-photos-banner">
+            <h1>Add Your Photos</h1>
+            <a href="/photos" style="transition-duration: 0.25s;">< Return to Gallery</a>
+            <div class="input-container">
+                <h2>Choose Image and Category</h2>
+                <form method="POST" action="/upload-photo" enctype="multipart/form-data">
+                    <input type="file" name="theimage" \>
+
+                    <select name="imagetype">
+                        <option value="practices">Practices</option>
+                        <option value="races">Races</option>
+                        <option value="events">Events</option>
+                    </select>
+                    <br>
+                    <input type="submit" name="submitbutton" value="Submit" onclick="return (prompt('Enter Admin Code:') == 'runclubadmin')"/>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
