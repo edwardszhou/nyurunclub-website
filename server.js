@@ -114,7 +114,7 @@ app.post('/remove', (req,res) => {
     })
 });
 
-app.listen(80, () => {
+app.listen(8000, 'localhost', () => {
     console.log('server has started on port 8000')
 })
 
