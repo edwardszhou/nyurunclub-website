@@ -30,7 +30,7 @@ window.onload = () => {
             event.appendChild(eventMessage);
 
             
-            if(today > new Date('2024-05-05')) { // End of season check
+            if(today > new Date('2024-05-06')) { // End of season check
                 eventName.innerHTML = "END OF SPRING 2024 SEASON";
                 break;
             }
@@ -59,23 +59,23 @@ window.onload = () => {
                 eventName.innerHTML = "RACE: NYCRUNS Big Apple 5K/HM";
                 eventMessage.innerHTML = "Central Park";
                 eventDate.innerHTML += ", 7:00 AM";
-            } else if(date == 25 && month == 2) { // Central Park
+            } else if(date == 25 && month == 1) { // Central Park
                 eventName.innerHTML = "RACE: NYCRUNS Central Park 5K/HM";
                 eventMessage.innerHTML = "Central Park";
                 eventDate.innerHTML += ", 8:00 AM";
-            } else if(date == 10 && month == 3) { // Pi Day
+            } else if(date == 10 && month == 2) { // Pi Day
                 eventName.innerHTML = "RACE: NSRF Pi Day 3.14 Miler";
                 eventMessage.innerHTML = "Flushing Meadows Corona Park";
                 eventDate.innerHTML += ", 9:30 AM";
-            } else if(date == 6 && month == 4) { // Spring Fling
+            } else if(date == 6 && month == 3) { // Spring Fling
                 eventName.innerHTML = "RACE: NYCRUNS Spring Fling 5K/10K";
                 eventMessage.innerHTML = "Governor's Island";
                 eventDate.innerHTML += ", 8:30 AM";
-            } else if(date == 14 && month == 4) { // Prospect Park
+            } else if(date == 14 && month == 3) { // Prospect Park
                 eventName.innerHTML = "RACE: NYCRUNS Prospect Park 5K";
                 eventMessage.innerHTML = "Prospect Park";
                 eventDate.innerHTML += ", 9:00 AM";
-            } else if(date == 28 && month == 4) { // Brooklyn Half
+            } else if(date == 28 && month == 3) { // Brooklyn Half
                 eventName.innerHTML = "RACE: NYCRUNS Brooklyn Half Marathon";
                 eventMessage.innerHTML = "Brooklyn";
                 eventDate.innerHTML += ", 7:00 AM";
