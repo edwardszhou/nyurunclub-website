@@ -1,0 +1,6 @@
+node_modules
+.vscode/
+sessions.txt
+database.txt
+public/photos
+public/upload
