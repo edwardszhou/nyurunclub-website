@@ -7,7 +7,7 @@ window.onload = () => {
 
     while(eventsLoaded < 15) {
         
-        if(today < new Date('2024-01-29')) { // Start of season check
+        if(today < new Date('2024-09-10')) { // Start of season check
             today.setDate(today.getDate() + 1);
             continue;
         }
@@ -30,8 +30,8 @@ window.onload = () => {
             event.appendChild(eventMessage);
 
             
-            if(today > new Date('2024-05-06')) { // End of season check
-                eventName.innerHTML = "END OF SPRING 2024 SEASON";
+            if(today > new Date('2024-12-18')) { // End of season check
+                eventName.innerHTML = "END OF FALL 2024 SEASON";
                 break;
             }
             
@@ -39,23 +39,27 @@ window.onload = () => {
 
             let date = today.getDate(), month = today.getMonth();
 
-            if(date == 21 && month == 9) { // Falling Leaves
+            if(date == 19 && month == 9) { // Falling Leaves
                 eventName.innerHTML = "RACE: NYCRUNS Falling Leaves 5K";
                 eventMessage.innerHTML = "Prospect Park";
                 eventDate.innerHTML += ", 7:00 AM";
-            } else if(date == 29 && month == 9) { // Haunted Island
+            } else if(date == 27 && month == 9) { // Haunted Island
                 eventName.innerHTML = "RACE: NYCRUNS Haunted Island 5K";
                 eventMessage.innerHTML = "Governor's Island";
                 eventDate.innerHTML += ", 8:00 AM";
-            } else if(date == 18 && month == 10) { // Donuts
-                eventName.innerHTML = "RACE: NYCRUNS Go Nuts for Donuts 5K/10K";
+            } else if(date == 3 && month == 10) { // Donuts
+                eventName.innerHTML = "EVENT: NYC Marathon Volunteering";
+                eventMessage.innerHTML = "Location TBD";
+                eventDate.innerHTML += ", Time TBD";
+            } else if(date == 16 && month == 10) { // Donuts
+                eventName.innerHTML = "RACE: NYCRUNS Go Nuts for Donuts 10K";
                 eventMessage.innerHTML = "Governor's Island";
                 eventDate.innerHTML += ", 7:30 AM";
-            } else if(date == 2 && month == 11) { // Cocoa
+            } else if(date == 7 && month == 11) { // Cocoa
                 eventName.innerHTML = "RACE: NYCRUNS Cocoa Classic 5K";
                 eventMessage.innerHTML = "Prospect Park";
                 eventDate.innerHTML += ", 8:00 AM";
-            } else if(date == 9 && month == 11) { // Big Apple
+            } else if(date == 14 && month == 11) { // Big Apple
                 eventName.innerHTML = "RACE: NYCRUNS Big Apple 5K/HM";
                 eventMessage.innerHTML = "Central Park";
                 eventDate.innerHTML += ", 7:00 AM";
@@ -90,7 +94,7 @@ window.onload = () => {
             } else {
                 eventName.innerHTML = "Group Run";
                 eventMessage.innerHTML = "Marsha P. Johnson Memorial Fountain"
-                if(dayOfWeek = 2) eventDate.innerHTML += ", 5:00 PM";
+                if(dayOfWeek = 2) eventDate.innerHTML += ", 6:00 PM";
                 else eventDate.innerHTML += ", 10:00 AM";
             }
 
